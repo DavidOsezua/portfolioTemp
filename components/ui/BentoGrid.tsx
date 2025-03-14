@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 // Also install this npm i --save-dev @types/react-lottie
@@ -93,7 +95,8 @@ export const BentoGridItem = ({
             <Image
               src={img}
               alt={img}
-              fill
+              width={0}
+              height={0}
               style={{ objectFit: "cover" }}
               className={cn(imgClassName, "object-cover object-center ")}
             />
@@ -108,7 +111,8 @@ export const BentoGridItem = ({
             <Image
               src={spareImg}
               alt={spareImg}
-              fill
+              width={0}
+              height={0}
               // style={{ objectFit: "contain" }}
               className="object-cover object-center w-full h-full"
             />
