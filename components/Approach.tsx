@@ -63,6 +63,7 @@ const Approach = () => {
           />
         </Card>
       </div>
+      <div></div>
     </section>
   );
 };
